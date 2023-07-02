@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.homework2.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:enterAnim="@android:anim/accelerate_decelerate_interpolator"
+            app:exitAnim="@android:anim/accelerate_decelerate_interpolator"
+            app:popEnterAnim="@android:anim/anticipate_interpolator"
+            app:popExitAnim="@android:anim/cycle_interpolator"
+            app:popUpTo="@id/mainFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_settingragment2"
+            app:destination="@id/settingragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_profileFragment2"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_settingragment"
+            app:destination="@id/settingragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_settingragment3"
+            app:destination="@id/settingragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_profileFragment3"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_profileFragment4"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_settingragment4"
+            app:destination="@id/settingragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_profileFragment5"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_settingragment5"
+            app:destination="@id/settingragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_callFragment"
+            app:destination="@id/callFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.homework2.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_settingragment"
+            app:destination="@id/settingragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_settingragment2"
+            app:destination="@id/settingragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_settingragment3"
+            app:destination="@id/settingragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_settingragment4"
+            app:destination="@id/settingragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_settingragment5"
+            app:destination="@id/settingragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingragment"
+        android:name="com.example.homework2.SettingFragment"
+        android:label="fragment_settingragment"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingragment_to_cameraFragment"
+            app:destination="@id/cameraFragment" />
+    </fragment>
+        <action
+            android:id="@+id/action_settingragment_to_profileFragment"
+            app:destination="@id/settingragment" />
+        <action
+            android:id="@+id/action_settingragment_to_CallFragment"
+            app:destination="@id/settingragment" />
+    <fragment
+        android:id="@+id/callFragment"
+        android:name="com.example.homework2.CallFragment"
+        android:label="fragment_call"
+        tools:layout="@layout/fragment_call" >
+        <action
+            android:id="@+id/action_callFragment_to_settingragment"
+            app:destination="@id/settingragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.example.homework2.CameraFragment"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera" >
+        <action
+            android:id="@+id/action_cameraFragment_to_settingragment"
+            app:destination="@id/settingragment" />
+        <action
+            android:id="@+id/action_cameraFragment_to_callFragment"
+            app:destination="@id/callFragment" />
+    </fragment>
+</navigation>
