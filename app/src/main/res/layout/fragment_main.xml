@@ -27,7 +27,6 @@
         android:text="GoToProfile"
         app:layout_constraintTop_toBottomOf="@id/tvTitle" />
 
-
     <Button
         android:id="@+id/btnToSettings"
         android:layout_width="match_parent"
