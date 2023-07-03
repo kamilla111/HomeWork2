@@ -15,19 +15,18 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentMainBinding.bind(view)
 
-//        binding?.run{
-//            btnToSettings.setOnClickListener {
-//                findNavController().navigate(R.id.action_mainFragment_to_settingragment) }
-//
-//            btnToProfile.setOnClickListener {
-//                findNavController().navigate(
-//                    R.id.action_mainFragment_to_profileFragment,
-//                    ProfileFragment.createBundle("Jovany", 33)
-//                )
-//            }
-//        }
+        binding?.run{
+            btnToSettings.setOnClickListener {
+                findNavController().navigate(R.id.action_mainFragment_to_settingragment) }
+
+            btnToProfile.setOnClickListener {
+                findNavController().navigate(
+                    R.id.action_mainFragment_to_profileFragment
+                )
+            }
         }
-//
+        }
+
     override fun onDestroyView() {
         super.onDestroyView()
         binding = null
