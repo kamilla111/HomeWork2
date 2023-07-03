@@ -16,12 +16,6 @@ class SingleActivity : AppCompatActivity() {
 
         findViewById<BottomNavigationView>(R.id.bnv_main).apply {
             setupWithNavController(controller)
-
-//            setOnItemSelectedListener {
-//                when (it.itemId) {
-//                    R.id.mainFragment -> na vigateUpTo()
-//                }
-//            }
         }
 
     }
