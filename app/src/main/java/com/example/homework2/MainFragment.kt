@@ -14,6 +14,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentMainBinding.bind(view)
+
         binding?.run{
             btnToSettings.setOnClickListener {
                 findNavController().navigate(R.id.action_mainFragment_to_settingragment) }
