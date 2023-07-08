@@ -1,38 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".CallFragment"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    tools:context=".CallFragment">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="480dp"
+        android:layout_marginEnd="144dp"
+        android:text="Add" />
+
+    <EditText
+        android:id="@+id/comment"
+        android:layout_width="254dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginEnd="148dp"
+        android:hint="Enter your comment"
+        />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="254dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="148dp"
+        android:hint="Enter your name" />
+
+<!--    <EditText-->
+<!--        android:id="@+id/country"-->
+<!--        android:layout_width="254dp"-->
+<!--        android:layout_height="49dp"-->
+<!--        android:layout_marginStart="80dp"-->
+<!--        android:layout_marginTop="420dp"-->
+<!--        android:layout_marginEnd="148dp"-->
+<!--        android:hint="Enter country"-->
+<!--        />-->
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="291dp"/>
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Call"
-        android:textSize="26sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.278" />
+        android:layout_width="274dp"
+        android:layout_height="124dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="580dp"
+        android:layout_marginEnd="148dp"
+        android:text="our comment" />
+    <!--        tools:src="@drawable/photo" />-->
 
-    <EditText
-        android:id="@+id/editTextNumber2"
-        android:layout_width="121dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="144dp"
-        android:ems="10"
-        android:hint="Введите номер"
-        android:inputType="number"
-        android:textAppearance="@style/TextAppearance.AppCompat.Small"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
